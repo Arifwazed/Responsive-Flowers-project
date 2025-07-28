@@ -123,6 +123,23 @@ nav ul li{
     width: 100%;
 }
 
+/* love Section  */
+.lover{
+    display: flex;
+    gap: 60px;
+    margin-top: 210px;
+}
+.lover-content{
+    width: 540px;
+}
+.lover-content ul li{
+    font-weight: 400;
+}
+.lover-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
 
 
 
@@ -151,12 +168,16 @@ nav ul li{
         grid-template-columns: repeat(2,1fr);
         max-width: 100%;
     }
-    .card-container{
+    .card-container,.lover-content{
     width: 100%;
     /*height: 484.94px;*/
     }
     .btn-primary{
     padding: 19px 30px;
     width: 100%;
+    }
+    .lover{
+        display: flex;
+        flex-direction: column;
     }
 }
