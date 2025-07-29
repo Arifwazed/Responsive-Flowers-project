@@ -140,6 +140,86 @@ nav ul li{
     font-weight: bold;
 }
 
+/* Deal Section  */
+.deal{
+    
+    justify-items: center;
+}
+.deal-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+.deal-descrip{
+    width: 888px;
+}
+.deal-card{
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr); 
+    grid-template-rows: repeat(2,0.5fr 1fr);
+    gap: 22px;
+    width: 1145px;
+    height: 425px;
+    margin-top: 120px;
+}
+.card1{
+    background-image: url(/Images/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 367px;
+    height: 201px;
+}
+.card1 h3,.card2 h3{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.card1 a,.card2 a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.card2{
+    background-image: url(/Images/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 367px;
+    height: 201px;
+}
+.card3{
+    background-image: url(/Images/deal-zabo.png);
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 753px;
+}
+.card3 h3{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.card3 a{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+#card3{
+    grid-row: span 2;
+}
+
 /*  Join Section */
 .join{
     background-image: url(/Images/news-letter-bg.png);
@@ -209,7 +289,7 @@ form input[type="button"]{
 /*   responsive style   */
 @media screen and (max-width: 575px) {
     .bg{
-        margin: 0px;
+        margin: 10px;
     }
     nav{
         display: flex;
@@ -231,7 +311,7 @@ form input[type="button"]{
         grid-template-columns: repeat(2,1fr);
         max-width: 100%;
     }
-    .card-container,.lover-content,.join,.foot{
+    .card-container,.lover-content,.join,.foot,.card1,.card2,.card3,.deal-descrip{
     width: 100%;
     /*height: 484.94px;*/
     }
@@ -243,6 +323,34 @@ form input[type="button"]{
         display: flex;
         flex-direction: column;
     }
+    .deal-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        width: 100%;
+        height: auto;
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3";
+    }
+    .card1 { grid-area: card1; }
+    .card2 { grid-area: card2; }
+    .card3 { grid-area: card3; }
+    .card3{
+        height: auto;
+    }
+    .card3 h3{
+        color: #FFFFFF;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .card3 a{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
     .join{
         margin: 0px;
         padding: 0px;
