@@ -172,6 +172,38 @@ form input[type="button"]{
     margin-left:-4px;
 }
 
+/*    footer Section    */
+.foot{
+    display: flex;
+    margin: 50px 160px;
+}
+.footer-content{
+    width: 359px;
+}
+.footer-link{
+    margin: 0 111px;
+}
+.footer-link ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 110px;
+    row-gap: 32px;
+    list-style: none;
+}
+.footer-link ul a{
+    text-decoration: none;
+}
+.footer-link ul li{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6B7280;
+}
+.footer-media{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+
 
 
 /*   responsive style   */
@@ -199,7 +231,7 @@ form input[type="button"]{
         grid-template-columns: repeat(2,1fr);
         max-width: 100%;
     }
-    .card-container,.lover-content,.join{
+    .card-container,.lover-content,.join,.foot{
     width: 100%;
     /*height: 484.94px;*/
     }
@@ -207,7 +239,7 @@ form input[type="button"]{
     padding: 19px 30px;
     width: 100%;
     }
-    .lover{
+    .lover,.foot{
         display: flex;
         flex-direction: column;
     }
@@ -224,5 +256,14 @@ form input[type="button"]{
     form input[type="button"]{
         width: 40%;
     }
-
+    .foot,.footer-link,.footer-content{
+        margin: 0;
+    }
+    .footer-link ul{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-media{
+        gap:1px;
+    }
 }
