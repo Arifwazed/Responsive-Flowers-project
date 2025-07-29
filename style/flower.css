@@ -129,6 +129,14 @@ nav ul li{
     gap: 60px;
     margin-top: 210px;
 }
+.main-image{
+    position: relative;
+}
+.sub-image{
+    position: absolute;
+    top: -120px;
+    left: 350px;
+}
 .lover-content{
     width: 540px;
 }
@@ -311,13 +319,18 @@ form input[type="button"]{
         grid-template-columns: repeat(2,1fr);
         max-width: 100%;
     }
-    .card-container,.lover-content,.join,.foot,.card1,.card2,.card3,.deal-descrip{
+    .card-container,.lover-content,.join,.foot,.card1,.card2,.card3,.deal-descrip,.main-image img{
     width: 100%;
     /*height: 484.94px;*/
     }
+    
     .btn-primary{
     padding: 19px 30px;
     width: 100%;
+    }
+
+    .sub-image{
+        display: none;
     }
     .lover,.foot{
         display: flex;
