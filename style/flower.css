@@ -304,8 +304,33 @@ form input[type="button"]{
         justify-content: space-between;
         margin: 15px;
     }
+    .nav-image{
+        width: 63px;
+        height: 38px;
+    }
+    nav ul a{
+        margin-left: -20px;
+    }
     .display{
         display: none;
+    }
+    .banner-title,.plant-title,.lover-title,.deal-title{
+        font-size: 1.5rem;
+    }
+    .banner-description{
+        font-size: 0.875rem;
+    }
+    .main-image{
+        margin-bottom: 0px;
+    }
+    .lover-content{
+        margin-top: -58px;
+    }
+    .lover-content ul{
+        margin-left: -15px;
+    }
+    .card-title,.card-price{
+        font-size: 1rem;
     }
     .banner{
         display: flex;
@@ -313,6 +338,9 @@ form input[type="button"]{
     }
     .banner-content,.plant-d{
        max-width: 100%;
+    }
+    .plant{
+        margin-top: 40px;
     }
     .card{
         display: grid;
@@ -325,8 +353,9 @@ form input[type="button"]{
     }
     
     .btn-primary{
-    padding: 19px 30px;
-    width: 100%;
+        padding: 19px 30px;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .sub-image{
@@ -335,6 +364,7 @@ form input[type="button"]{
     .lover,.foot{
         display: flex;
         flex-direction: column;
+        margin-top: 42px;
     }
     .deal-card{
         display: grid;
@@ -342,6 +372,7 @@ form input[type="button"]{
         grid-template-rows: repeat(3,1fr);
         width: 100%;
         height: auto;
+        margin-top: 30px;
         grid-template-areas:
         "card1"
         "card2"
@@ -365,14 +396,16 @@ form input[type="button"]{
     }
 
     .join{
-        margin: 0px;
+        margin: 0px -40px 0px -10px;
         padding: 0px;
     }
     .join-title{
         font-size: 1.5rem;
+        margin-top: 40px;
     }
     form input[type="email"]{
-        width: 40%;
+        width: 35%;
+        margin-bottom: 50px;
     }
     form input[type="button"]{
         width: 40%;
