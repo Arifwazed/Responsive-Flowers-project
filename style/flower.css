@@ -204,7 +204,7 @@ nav ul li{
     height: 201px;
 }
 .card3{
-    background-image: url(/Images/deal-zabo.png);
+    background-image: url(../Images/deal-zabo.png);
     border-radius: 18px;
     background-repeat: no-repeat;
     background-size: cover;
